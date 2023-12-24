@@ -34,21 +34,24 @@
                 <div class="col-5">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Card #</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="XXXXXXXXXXXXXXXXXXXX">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="XXXXXXXXXXXXXXXXXXXX" required>
+                        <div class="invalid-feedback">
+                            Please insert card number
+                        </div>
                       </div>
                 </div>
                 <div class="col-3">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">CVC #</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="0000">
+                        <label for="exampleFormControlInput2" class="form-label">CVC #</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="0000" required>
                     </div>
                     
                 </div>
                 <div class="col-4">
-                    <label for="exampleFormControlInput1" class="form-label">Amount</label>
+                    <label for="exampleFormControlInput3" class="form-label">Amount</label>
                     <div class="d-flex">
                         <i class="fa-solid fa-dollar-sign mt-2 m-1"></i>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Amount">
+                    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Amount" required>
                     </div>
                 </div>
                 
@@ -56,28 +59,28 @@
             <div class="row">
                 <div class="col-6">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <label for="exampleFormControlInput4" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="" required>
                     </div>
                     
                 </div>
                 <div class="col-6">
-                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <label for="exampleFormControlInput5" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="" required>
                 </div>
             </div>
             <div class="row">
                 
                 <div class="col-6">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">City</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <label for="exampleFormControlInput6" class="form-label">City</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput6" placeholder="" required>
                     </div>
                     
                 </div>
                 <div class="col-3">
                     <label for="state">State</label>
-                    <select class="form-select form-select-sm mt-2" aria-label="Small select example" name="state">
+                    <select class="form-select form-select-sm mt-2" aria-label="Small select example" name="state" id="state" required>
                         <option selected>Open this select menu</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -85,8 +88,8 @@
                       </select>
                 </div>
                 <div class="col-3">
-                    <label for="exampleFormControlInput1" class="form-label">Postal Code</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <label for="exampleFormControlInput7" class="form-label">Postal Code</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput7" placeholder="" required>
                 </div>
             </div>
             <div class="row">
@@ -128,9 +131,22 @@
                 </div>
             </div>
 
-
+            
 
         </div>
+
+        <div class="card-footer">
+            <div class="row justify-content-end">   <! --preguntar esta clase de centrado -->
+                <div class="col-2">
+                    <input type="reset" value="Cancel" class="btn btn-secondary" >
+                <button class="btn btn-primary" type="submit">Send</button>
+                </div>
+                
+
+            </div>
+                
+        </div>
+
 
     </div>
 
